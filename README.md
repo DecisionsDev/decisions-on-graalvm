@@ -14,4 +14,6 @@ The experimentation has been performed with the following configuration:
 - OpenJDK Runtime Environment GraalVM CE 21.0.0.2 (build 11.0.10+8-jvmci-21.0-b06)
 - OpenJDK 64-Bit Server VM GraalVM CE 21.0.0.2 (build 11.0.10+8-jvmci-21.0-b06, mixed mode, sharing)
 
+## Compile a Java application that executes an ODM decision service
 
+## Execute the decision service runner

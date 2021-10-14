@@ -26,4 +26,4 @@ native-image -jar simpleloanvalidationsparkrunner-1.0-SNAPSHOT-withspark.jar -H:
 
 ## Execute the decision service runner
 You should observe the same output given by the native flavor compared to the Java decision service runner in its bytecode flavor.
-The expected gains - that depend on the Java application - are about the startup time and speed.
+The expected gains - that depend on the Java application - are about the startup time reduction and speed.

@@ -17,7 +17,7 @@ The experimentation has been performed with the following configuration:
 
 ## Compile a Java application that executes an ODM decision service
 Take a JSE runner application that executes the ODM RuleSession API, or the DecisionEngine API. This decision service runner has to load the ruleapp or ruleset into the rule execution stack and execute the rules against input parameters.
-You can leverage the app simpleloanvalidationsparkrunner from [the ODM-on-Spark](https://github.com/ODMDev/decisions-on-spark/blob/master/simple-loan-validation-spark-runner/README.md) repository.
+You can leverage the app simpleloanvalidationsparkrunner from the [ODM-on-Spark](https://github.com/ODMDev/decisions-on-spark/blob/master/simple-loan-validation-spark-runner/README.md) repository.
 
 You compile the decision service runner into native code:
 ```console

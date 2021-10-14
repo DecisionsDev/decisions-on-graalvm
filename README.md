@@ -19,9 +19,9 @@ Take a JSE runner application that executes the ODM RuleSession API, or the Deci
 You can leverage the app simpleloanvalidationsparkrunner from the ODM-on-Spark repository.
 
 You compile the decision service runner into native code:
-'''code
+```console
 native-image -jar simpleloanvalidationsparkrunner-1.0-SNAPSHOT-withspark.jar -H:+ReportExceptionStackTraces  --no-fallback --report-unsupported-elements-at-runtime
-'''
+```
 
 ## Execute the decision service runner
 You should observe the same output given by the native flavor compared to the Java decision service runner in its bytecode flavor.

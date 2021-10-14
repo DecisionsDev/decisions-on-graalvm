@@ -4,7 +4,7 @@ The aim of this project is to demonstrate how to leverage GraalVM to run an IBM 
 
 ## GraalVM
 GraalVM is a Java VM and JDK based on HotSpot/OpenJDK, implemented in Java. It supports additional programming languages and execution modes, like ahead-of-time compilation of Java applications for fast startup and low memory footprint. 
-For more information on GraalVM visit their projet site at https://www.graalvm.org/
+For more information on GraalVM visit their projet site at  [graalvm](https://www.graalvm.org/) 
 
 ## GraalVM installation
 Graal was included in HotSpot-based Java VM releases like OpenJDK from Java 9 through 15, but was removed in Java 16 for lack of use.[6] The jaotc command creates a Native Image. The experimental -XX:+EnableJVMCIProduct flag enables the use of Graal JIT.
@@ -19,7 +19,9 @@ Take a JSE runner application that executes the ODM RuleSession API, or the Deci
 You can leverage the app simpleloanvalidationsparkrunner from the ODM-on-Spark repository.
 
 You compile the decision service runner into native code:
+'''code
 native-image -jar simpleloanvalidationsparkrunner-1.0-SNAPSHOT-withspark.jar -H:+ReportExceptionStackTraces  --no-fallback --report-unsupported-elements-at-runtime
+'''
 
 ## Execute the decision service runner
 You should observe the same output given by the native flavor compared to the Java decision service runner in its bytecode flavor.

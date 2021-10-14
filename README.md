@@ -7,7 +7,8 @@ GraalVM is a Java VM and JDK based on HotSpot/OpenJDK, implemented in Java. It s
 For more information on GraalVM visit their projet site at  [graalvm](https://www.graalvm.org/) 
 
 ## GraalVM installation
-Graal was included in HotSpot-based Java VM releases like OpenJDK from Java 9 through 15, but was removed in Java 16 for lack of use.[6] The jaotc command creates a Native Image. The experimental -XX:+EnableJVMCIProduct flag enables the use of Graal JIT.
+Graal was included in HotSpot-based Java VM releases like OpenJDK from Java 9 through 15, but was removed in Java 16 for lack of use.
+The jaotc command creates a Native Image. The experimental -XX:+EnableJVMCIProduct flag enables the use of Graal JIT.
 
 The experimentation has been performed with the following configuration:
 - openjdk version "11.0.10" 2021-01-19
@@ -16,7 +17,7 @@ The experimentation has been performed with the following configuration:
 
 ## Compile a Java application that executes an ODM decision service
 Take a JSE runner application that executes the ODM RuleSession API, or the DecisionEngine API. This decision service runner has to load the ruleapp or ruleset into the rule execution stack and execute the rules against input parameters.
-You can leverage the app simpleloanvalidationsparkrunner from the ODM-on-Spark repository.
+You can leverage the app simpleloanvalidationsparkrunner from the ODM-on-Spark repository [app](https://github.com/ODMDev/decisions-on-spark/blob/master/simple-loan-validation-spark-runner/README.md) .
 
 You compile the decision service runner into native code:
 ```console

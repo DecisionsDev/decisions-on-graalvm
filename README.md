@@ -15,5 +15,12 @@ The experimentation has been performed with the following configuration:
 - OpenJDK 64-Bit Server VM GraalVM CE 21.0.0.2 (build 11.0.10+8-jvmci-21.0-b06, mixed mode, sharing)
 
 ## Compile a Java application that executes an ODM decision service
+Take a JSE runner application that executes the ODM RuleSession API, or the DecisionEngine API. This decision service runner has to load the ruleapp or ruleset into the rule execution stack and execute the rules against input parameters.
+You can leverage the app simpleloanvalidationsparkrunner from the ODM-on-Spark repository.
+
+You compile the decision service runner into native code:
+native-image -jar simpleloanvalidationsparkrunner-1.0-SNAPSHOT-withspark.jar -H:+ReportExceptionStackTraces  --no-fallback --report-unsupported-elements-at-runtime
 
 ## Execute the decision service runner
+You should observe the same output given by the native flavor compared to the Java decision service runner in its bytecode flavor.
+The expected gains - that depend on the Java application - are about the startup time and speed.
